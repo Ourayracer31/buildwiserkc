@@ -392,6 +392,18 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
 .herologo{width:clamp(280px,46vw,620px);margin-bottom:clamp(16px,2.6vh,28px)}
 .flogo .bwlogo{width:clamp(210px,24vw,310px)}
 
+/* trust row: BBB seal + QR */
+.trust{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(18px,2.6vw,34px);
+  margin-top:clamp(26px,3.6vh,38px);padding-top:clamp(22px,3vh,30px);
+  border-top:1px solid rgba(155,169,188,.22)}
+.bbb{background:#fff;padding:10px 14px;display:inline-flex;align-items:center;flex:none}
+.bbb img{display:block;height:auto;max-width:170px}
+.qr{display:flex;align-items:center;gap:16px;flex:none}
+.qr img{width:clamp(96px,11vw,124px);height:auto;display:block;background:#fff;padding:8px}
+.qr p{font-family:"Oswald",sans-serif;font-weight:400;font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:#C6D2E2;line-height:1.7;max-width:20ch}
+.qr p b{display:block;color:var(--gold);margin-bottom:6px}
+
 /* section call-to-action strip */
 .ctastrip{position:relative;margin-top:clamp(38px,5.4vh,60px);padding-top:clamp(24px,3.4vh,34px);
   border-top:1px solid rgba(155,169,188,.22);
@@ -477,7 +489,7 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
       <div class="stats">
         <div class="st"><b>2,000+</b><span>Satisfied Customers</span></div>
         <div class="st"><b>2&ndash;3 HR</b><span>Typical Response Time</span></div>
-        <div class="st"><b>200 MI</b><span>Service Radius</span></div>
+        <div class="st"><b>Regional</b><span>Service Area</span></div>
         <div class="st"><b>Certified</b><span>For Industry Standards</span></div>
       </div>
     </aside>
@@ -491,7 +503,7 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
     <p class="eyebrow reveal">Simple Process</p>
     <div class="ph">
       <h2 class="reveal">A clear path from problem to plan to production.</h2>
-      <p class="reveal">Multifamily buyers research before they ever call. This page makes it clear that Build Wiser understands the business problem first, then builds the scope around what the property actually needs.</p>
+      <p class="reveal">Multi-family buyers research before they ever call. This page makes it clear that Build Wiser understands the business problem first, then builds the scope around what the property actually needs.</p>
     </div>
     <div class="steps">
       <div class="step reveal">
@@ -639,7 +651,7 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
     <div class="steps">
       <div class="step reveal"><span class="no">60+</span><h3>Years Combined</h3><p>Experience across remodeling, restoration, and every major trade on the multi-family side.</p></div>
       <div class="step reveal"><span class="no">1</span><h3>Supervisor Per Job</h3><p>A dedicated job supervisor on every project, so communication does not run through a call center.</p></div>
-      <div class="step reveal"><span class="no">KC</span><h3>North Kansas City</h3><p>Local crews out of North Kansas City serving the metro and a 200-mile Midwest radius.</p></div>
+      <div class="step reveal"><span class="no">KC</span><h3>North Kansas City</h3><p>Local crews out of North Kansas City serving the metro and the surrounding region.</p></div>
     </div>
 
     <div class="ctastrip reveal">
@@ -708,7 +720,7 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
         <div class="cline"><p class="lbl">Office</p><span class="val">1536 Erie Street<br>North Kansas City, MO 64116</span></div>
         <div class="cline"><p class="lbl">Main Line</p><a href="tel:8165548899">816-554-8899</a></div>
         <div class="cline"><p class="lbl">Email</p><a href="mailto:info@buildwiserkc.com">info@buildwiserkc.com</a></div>
-        <div class="cline"><p class="lbl">Service Area</p><span class="val">Greater Kansas City and a 200-mile Midwest radius</span></div>
+        <div class="cline"><p class="lbl">Service Area</p><span class="val">Greater Kansas City and the surrounding region</span></div>
       </div>
       <div class="cbox reveal">
         <h3>Request a free estimate</h3>
@@ -716,9 +728,19 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
         <div class="btform">
           <!-- Buildertrend Contact Form -->
           <script type="text/javascript" src="https://buildertrend.net/contact-form/btClientContactForm.js"></script>
+          <script type="text/javascript" src="https://seal-nebraska.bbb.org/inc/legacy.js"></script>
           <iframe src="https://buildertrend.net/contact-form/?builderID=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJidWlsZGVySWQiOjExMzAwMn0.c9r4oI74MnGQVS8OUGklIuAEIznb3fOHeXSY737jArI" scrolling="no" id="btIframe" style="background:transparent;border:0px;margin:0 auto;width:100%;" title="Request a free estimate"></iframe>
           <!-- /Buildertrend Contact Form -->
         </div>
+      </div>
+      <div class="trust reveal">
+        <span class="bbb">
+          <a href="https://www.bbb.org/us/mo/kansas-city/profile/general-contractor/build-wiser-construction-0714-1000069354/#sealclick" id="bbblink" class="ruhzbum" target="_blank" rel="nofollow noopener"><img src="https://seal-nebraska.bbb.org/logo/ruhzbum/bbb-1000069354.png" style="border:0;" alt="Build Wiser Construction BBB Business Review" /></a>
+        </span>
+        <span class="qr">
+          <img src="qr-estimate.png" alt="QR code linking to the Build Wiser free estimate request form" loading="lazy">
+          <p><b>Scan to request an estimate</b>Point your phone camera here to open the form.</p>
+        </span>
       </div>
     </div>
   </div>
