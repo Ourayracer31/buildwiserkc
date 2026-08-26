@@ -15,3 +15,5 @@ GitHub Pages, served from the repo root on the `main` branch.
 ## Editing
 All copy lives in `index.html`. To swap a project photo, replace the file in
 `images/` keeping the same filename.
+
+<!-- deploy refresh 2026-08-26 -->
