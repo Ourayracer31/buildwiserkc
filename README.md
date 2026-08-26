@@ -1,6 +1,6 @@
 # buildwiserkc.com
 
-Static one-page site for Build Wiser Construction LLC.
+Static one-page site for Build Wiser Construction.
 
 ## Files
 - `index.html` — the entire site
