@@ -211,7 +211,14 @@ h1,h2,h3,.disp{font-family:"Oswald",sans-serif;text-transform:uppercase}
 .vig{position:absolute;inset:0;z-index:-2;pointer-events:none;
   background:radial-gradient(78% 78% at 30% 46%,transparent 0%,rgba(6,10,18,.55) 78%)}
 
-.inner{width:100%;max-width:1340px;margin:0 auto;display:grid;
+.herotrust{position:absolute;top:0;right:0;display:flex;align-items:center;gap:14px;z-index:5}
+.herotrust .hqr{flex:none;line-height:0;background:#fff;padding:5px;border-radius:5px;box-shadow:0 6px 18px rgba(0,0,0,.35);transition:transform .18s}
+.herotrust .hqr:hover{transform:translateY(-2px)}
+.herotrust .hqr img{display:block;width:64px;height:64px}
+.herotrust .hbbb{flex:none;line-height:0}
+.herotrust .hbbb img{display:block;width:158px;height:auto}
+@media(max-width:1000px){.herotrust{display:none}}
+.inner{position:relative;width:100%;max-width:1340px;margin:0 auto;display:grid;
   grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);gap:clamp(30px,5vw,74px);align-items:center}
 @media(max-width:1000px){.inner{grid-template-columns:1fr;gap:44px}}
 
@@ -498,7 +505,8 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
       </div>
     </div>
 
-    <aside class="card rise d5">
+    <div class="herotrust"><a class="hqr" href="#contact" aria-label="Tap or scan to request a free estimate"><img src="qr-estimate.png" alt="QR code linking to the Build Wiser free estimate request form" width="64" height="64"></a><span class="hbbb"><a href="https://www.bbb.org/us/mo/kansas-city/profile/general-contractor/build-wiser-construction-0714-1000069354/#sealclick" target="_blank" rel="noopener"><img src="https://seal-nebraska.bbb.org/logo/ruhzbum/bbb-1000069354.png" alt="Build Wiser Construction — BBB Accredited Business, A+ rating" width="158" height="36"></a></span></div>
+        <aside class="card rise d5">
       <p>Built for Kansas City owners and property managers who need clear next steps fast.</p>
       <div class="statement">
         <p>Proven capital projects experience with a sharp understanding of both <strong>Budgeted</strong> and <strong>Unbudgeted</strong> project demands, driving results when it matters most.</p>
