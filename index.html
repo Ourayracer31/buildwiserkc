@@ -154,6 +154,13 @@ h1,h2,h3,.disp{font-family:"Oswald",sans-serif;text-transform:uppercase}
   letter-spacing:clamp(.07em,.14vw,.19em);text-transform:uppercase;
   padding:clamp(10px,1.3vw,13px) clamp(13px,1.9vw,24px);display:inline-flex;align-items:center;gap:11px;white-space:nowrap;
   transition:background .2s,transform .18s}
+.navtel{flex:none;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:"Oswald",sans-serif;font-weight:500;font-size:clamp(.62rem,1vw,.78rem);letter-spacing:.08em;color:#fff;white-space:nowrap;padding:clamp(8px,1.1vw,11px) clamp(11px,1.5vw,17px);border:1px solid rgba(228,101,28,.6);border-radius:2px;transition:background .2s,border-color .2s,color .2s}
+.navtel svg{width:14px;height:14px;flex:none;fill:var(--gold);transition:fill .2s}
+.navtel span{line-height:1}
+.navtel:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.navtel:hover svg{fill:#fff}
+@media(max-width:700px){.navtel{margin-left:auto;padding:8px 12px;font-size:.72rem}.bar .burger{margin-left:0}}
+@media(max-width:400px){.navtel span{display:none}.navtel{padding:8px 10px}}
 .navcta:hover{background:var(--gold2);transform:translateY(-1px)}
 .bar a:focus-visible,.burger:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .burger{display:none;margin-left:auto;background:none;border:1px solid rgba(155,169,188,.4);padding:10px 12px;cursor:pointer}
@@ -450,7 +457,8 @@ h2{font-weight:600;font-size:clamp(1.75rem,4.2vw,3.15rem);line-height:1.06;lette
     <a href="#team">Team</a>
     <a href="#contact">Contact</a>
   </div>
-  <a class="navcta" href="#contact">Free Estimate <span class="arrow">&rarr;</span></a>
+  <a class="navtel" href="tel:+18165548899" aria-label="Call Build Wiser Construction"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.2 2.2z"/></svg><span>816-554-8899</span></a>
+      <a class="navcta" href="#contact">Free Estimate <span class="arrow">&rarr;</span></a>
   <button class="burger" id="burger" aria-expanded="false" aria-controls="sheet" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
